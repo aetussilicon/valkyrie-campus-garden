@@ -1,7 +1,8 @@
 import './App.css';
+import Signin from './pages/Signin';
 
 function App() {
-  return <h1>Teste</h1>;
+  return <Signin />;
 }
 
 export default App;
