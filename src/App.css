@@ -1,0 +1,56 @@
+:root {
+  /** CSS DARK THEME PRIMARY COLORS */
+  --color-primary-100: #7a1cac;
+  --color-primary-200: #8b3bb6;
+  --color-primary-300: #9b55bf;
+  --color-primary-400: #aa6dc9;
+  --color-primary-500: #b985d2;
+  --color-primary-600: #c89ddb;
+
+  /** CSS DARK THEME SURFACE COLORS */
+  --color-surface-100: #121212;
+  --color-surface-200: #282828;
+  --color-surface-300: #3f3f3f;
+  --color-surface-400: #575757;
+  --color-surface-500: #717171;
+  --color-surface-600: #8b8b8b;
+
+  --text-color-white: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-surface-100);
+  color: var(--color-primary-600);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-300);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-300);
+}
+
+.form-label {
+  color: var(--text-color-white);
+  margin: 0;
+}
+
+.form-control {
+  background-color: var(--color-surface-200);
+}
+
+.form-control:focus {
+  background-color: var(--color-surface-200);
+  color: var(--text-color-white);
+}
+
+.form-control::placeholder {
+  color: var(--color-surface-500);
+}
