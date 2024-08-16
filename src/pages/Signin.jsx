@@ -5,7 +5,7 @@ const Signin = () => {
     <div className='container-fluid auth-container'>
       <div className='auth-form-container'>
         <form className='auth-form'>
-          <h1>Entrar</h1>
+          <h1>Login</h1>
           <div className='auth-input'>
             <label
               htmlFor='email'
@@ -40,6 +40,12 @@ const Signin = () => {
             Entrar
           </button>
         </form>
+        <div className='signup-redirect'>
+          <span>
+            Não tem uma conta?
+            <a href='/signup'> Cadastre-se</a>
+          </span>
+        </div>
       </div>
     </div>
   );

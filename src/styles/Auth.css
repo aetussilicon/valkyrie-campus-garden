@@ -41,3 +41,13 @@
 .auth-button:hover {
   transform: translateY(-5px);
 }
+
+.signup-redirect {
+  margin-top: 1rem;
+  color: var(--color-primary-300);
+}
+
+.signup-redirect a {
+  color: var(--color-primary-500);
+  text-decoration: none;
+}

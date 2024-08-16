@@ -43,12 +43,14 @@
 }
 
 .form-control {
-  background-color: var(--color-surface-200);
+  background-color: var(--color-surface-300);
+  border: none;
 }
 
 .form-control:focus {
-  background-color: var(--color-surface-200);
+  background-color: var(--color-surface-300);
   color: var(--text-color-white);
+  outline: 0;
 }
 
 .form-control::placeholder {
