@@ -40,7 +40,7 @@ const Signin = () => {
             Entrar
           </button>
         </form>
-        <div className='signup-redirect'>
+        <div className='auth-redirect'>
           <span>
             Não tem uma conta?
             <a href='/signup'> Cadastre-se</a>
