@@ -1,10 +1,22 @@
+import { useContext } from 'react';
 import '../styles/Auth.css';
+import { SignupContext } from '../contexts/SignupContext';
 
 const Signup = () => {
+  const { signupForm, handleInputChange, signupUser } =
+    useContext(SignupContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    signupUser();
+  };
+
   return (
     <div className='container-fluid auth-container'>
       <div className='auth-form-container'>
-        <form className='auth-form'>
+        <form
+          className='auth-form'
+          onSubmit={handleSubmit}>
           <h1>Cadastro</h1>
           <div className='auth-input'>
             <label
@@ -18,6 +30,7 @@ const Signup = () => {
               id='fullName'
               name='fullName'
               placeholder='Pedro da Silva'
+              onChange={handleInputChange}
             />
           </div>
           <div className='auth-input'>
@@ -32,6 +45,7 @@ const Signup = () => {
               id='usertag'
               name='usertag'
               placeholder='pedro_silva'
+              onChange={handleInputChange}
             />
           </div>
           <div className='auth-input'>
@@ -46,6 +60,7 @@ const Signup = () => {
               id='email'
               name='email'
               placeholder='exemplo@estudante.unisa.br'
+              onChange={handleInputChange}
             />
           </div>
           <div className='auth-input'>
@@ -60,6 +75,7 @@ const Signup = () => {
               id='password'
               name='password'
               placeholder='********'
+              onChange={handleInputChange}
             />
           </div>
           <div className='auth-input'>
@@ -74,6 +90,7 @@ const Signup = () => {
               id='repassword'
               name='repassword'
               placeholder='********'
+              onChange={handleInputChange}
             />
           </div>
           <button
