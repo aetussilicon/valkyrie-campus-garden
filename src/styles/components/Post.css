@@ -1,0 +1,102 @@
+.post-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.vote-column,
+.post-content-container {
+  height: 15rem;
+}
+
+.vote-column {
+  width: 2.5rem;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.vote-buttons span {
+  text-align: center;
+}
+
+.vote-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.vote-button {
+  cursor: pointer;
+}
+
+.post-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--color-surface-200);
+  width: 40rem;
+  padding: 20px;
+  border-radius: 0px 20px 20px 0;
+}
+
+.vote-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-surface-300);
+}
+
+.post-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url('user-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.user-name-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name-info .usertag {
+  font-size: 13px;
+}
+
+.post-info span {
+  font-size: 14px;
+}
+
+.post-content h3 {
+  font-size: 22px;
+}
+
+.post-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}

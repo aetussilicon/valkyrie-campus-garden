@@ -19,13 +19,17 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 .container-fluid {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: var(--color-surface-100);
-  color: var(--color-primary-600);
+  color: var(--text-color-white);
 }
 
 .btn-primary {
